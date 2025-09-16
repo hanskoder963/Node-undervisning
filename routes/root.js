@@ -3,12 +3,13 @@ const router = express.Router();
 const path = require("path");
 
 router.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "view", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "view", "index.html"));
 });
 
 router.get("/new-page.html", (req, res) => {
-  res.sendFile(path.join(__dirname, "view", "new-page.html"));
+  res.sendFile(path.join(__dirname, "..", "view", "new-page.html"));
 });
+
 router.get("/old-page.html", (req, res) => {
   res.redirect(301, "/new-page.html");
 });
