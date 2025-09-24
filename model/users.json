@@ -1,0 +1,30 @@
+[
+  {
+    "username": "User1",
+    "roles": {
+      "User": 1003
+    },
+    "password": "$2b$10$DsiYtpLlVuZyyRCf0crGuuAKhQboxtbYGKkmUJ/s4BnZN5siixARK",
+    "refreshToken": ""
+  },
+
+  {
+    "username": "User2",
+    "roles": {
+      "Admin": 1001,
+      "User": 1003
+    },
+    "password": "$2b$10$DsiYtpLlVuZyyRCf0crGuuAKhQboxtbYGKkmUJ/s4BnZN5siixARK",
+    "refreshToken": ""
+  },
+
+  {
+    "username": "User3",
+    "roles": {
+      "Editor": 1002,
+      "User": 1003
+    },
+    "password": "$2b$10$DsiYtpLlVuZyyRCf0crGuuAKhQboxtbYGKkmUJ/s4BnZN5siixARK",
+    "refreshToken": ""
+  }
+]

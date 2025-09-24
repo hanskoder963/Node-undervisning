@@ -16,7 +16,7 @@ const verifyJWT = require("./middleware/verifyJWT");
 const PORT = process.env.PORT || 3500;
 const app = express();
 
-app.use(logger);
+//app.use(logger);
 
 app.use(cors(corsOptions));
 
@@ -33,6 +33,7 @@ app.use("/subdir", require("./routes/subdir/subdir"));
 app.use("/register", require("./routes/register"));
 app.use("/auth", require("./routes/auth"));
 app.use("/refresh", require("./routes/refresh"));
+app.use("/logout", require("./routes/logout"));
 
 //beskyttet
 app.use(verifyJWT);
