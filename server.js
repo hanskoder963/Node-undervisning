@@ -5,6 +5,8 @@ const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 
+const db = require("./database");
+
 //first party imports
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
@@ -36,7 +38,7 @@ app.use("/refresh", require("./routes/refresh"));
 app.use("/logout", require("./routes/logout"));
 
 //beskyttet
-app.use(verifyJWT);
+//app.use(verifyJWT);
 app.use("/employees", require("./routes/api/employees"));
 
 app.all(/.*/, (req, res) => {
